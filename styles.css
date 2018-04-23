@@ -2469,6 +2469,13 @@ a {
     color: #787887;
     letter-spacing: .4px
 }
+.s-video__subheading {
+    margin: 3px 0 0;
+    font-weight: 400;
+    font-size: 12px;
+    color: #787887;
+    letter-spacing: .4px
+}
 .s-video__link {
     display: inline-block;
     margin-top: 8px
@@ -2511,10 +2518,10 @@ a {
 .h-offerings--list {
     padding: 8px 0;
     border: 1px solid #f0f0f5;
-    height: 202px;
+    height: 225px;
 }
 .h-offerings__listitem {
-    margin: 8px 0;
+    margin: 12px 0;
     font-size: 14px;
     color: #787887;
     padding-left: 8px

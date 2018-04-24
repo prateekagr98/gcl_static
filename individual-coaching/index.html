@@ -488,6 +488,16 @@
           </div>
         </div>
       </div>
+      <div class="side-card sidebar popup">
+        <div class="side-card--content">
+          <p class="section__text">
+            If you would like to overcome your professional challenges and are looking for an Executive Coach to coach you through your individual, team or organisational challenges, write to us at <a href="mailto:executivecoaching@globalcoachinglabs.com">executivecoaching@globalcoachinglab.com</a>
+          </p>
+          <p class="section__text">
+            Read what other coachees have had to say via their <a href="/testimonials">Testimonials</a> or <a href="/insights-impact">Impact</a> stories in our Newsletter.
+          </p>
+        </div>
+      </div>
       <div class="footer">
         <div class="container">
           <div class="pure-g">
@@ -506,6 +516,7 @@
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="http://globalcoachinglab.com/assets/javascript/tingle.min.js"></script>
   <script type="text/javascript">
     // instanciate new modal
@@ -548,6 +559,8 @@
     }
 
     $(document).ready(function(){
+      $('.popup').hide();
+      
       $(".nav--hamburger").on("click", function(){
         $('.nav--mobile').addClass('u-d-block');
         $('.nav--mobile').removeClass('u-hidden');
@@ -557,6 +570,17 @@
         $('.nav--mobile').removeClass('u-d-block');
         $('.nav--mobile').addClass('u-hidden');
       });
+
+      $(window).scroll(function() {
+         if($(window).scrollTop() + $(window).height() == $(document).height()) {
+          $('.popup').show('slide', {direction: 'right'}, 500);
+         } else {
+          if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
+            $('.popup').fadeOut();
+          }
+         }
+      });
+
     });
   </script>
 </html>

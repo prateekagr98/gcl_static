@@ -524,8 +524,16 @@
         </div>
       </div>
     </div>
+    <div class="side-card sidebar popup">
+      <div class="side-card--content">
+        <p class="section__text">
+          Sign up for our public programs, or mentoring and coaching sessions by writing to us at <a href="mailto:womensolutions@globalcoachinglab.com">womensolutions@globalcoachinglab.com</a>. The information on each solution serves as a guideline on our capabilities. We will be happy to connect with you to custom design a program that best suits you, your team and your organisation
+        </p>
+      </div>
+    </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $(".nav--hamburger").on("click", function(){
@@ -536,6 +544,17 @@
       $(".nav--close").on("click", function(){
         $('.nav--mobile').removeClass('u-d-block');
         $('.nav--mobile').addClass('u-hidden');
+      });
+
+      $('.popup').hide();
+      $(window).scroll(function() {
+         if($(window).scrollTop() + $(window).height() == $(document).height()) {
+          $('.popup').show('slide', {direction: 'right'}, 500);
+         } else {
+          if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
+            $('.popup').fadeOut();
+          }
+         }
       });
     });
   </script>

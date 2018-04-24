@@ -540,8 +540,16 @@
         </div>
       </div>
     </div>
+    <div class="side-card sidebar popup">
+      <div class="side-card--content">
+        <p class="section__text">
+          If you are looking for helpline, life-balance and other sustainability solutions for Students or Adults, please write to us at <a href="mailto:sustainability@globalcoachinglab.com">sustainability@globalcoachinglab.com</a>. We will be happy to discuss individual coaching or group coaching sessions based on your comfort and needs
+        </p>
+      </div>
+    </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $(".nav--hamburger").on("click", function(){
@@ -552,6 +560,17 @@
       $(".nav--close").on("click", function(){
         $('.nav--mobile').removeClass('u-d-block');
         $('.nav--mobile').addClass('u-hidden');
+      });
+
+      $('.popup').hide();
+      $(window).scroll(function() {
+         if($(window).scrollTop() + $(window).height() == $(document).height()) {
+          $('.popup').show('slide', {direction: 'right'}, 500);
+         } else {
+          if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
+            $('.popup').fadeOut();
+          }
+         }
       });
     });
   </script>

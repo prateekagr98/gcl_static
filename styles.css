@@ -2318,8 +2318,8 @@ a {
     color: #787887
 }
 .c-carousel__item {
-    width: 700px;
-    height: 400px
+    width: auto;
+    height: 450px;
 }
 @media screen and (max-width: 1024px) {
     .c-carousel__item {

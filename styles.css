@@ -3376,9 +3376,10 @@ a {
   font-size: 14px;
   letter-spacing: 0.7px;
   margin-left: 12px;
-  padding: 8px;
+  padding: 6px 16px;
   border: 1px solid #1B9CE2;
   vertical-align: middle;
+  outline: none;
 }
 .subscribe-button:hover {
   background-color: #1B9CE2;
@@ -3461,6 +3462,29 @@ a {
 }
 .popup a {
     color: #273D95;
+}
+.subscribe-text {
+    position: relative;
+    top: 10px;
+    left: -30px;
+    display: inline-block;
+    width: 250px;
+    font-size: 14px;
+    color: #414146;
+    letter-spacing: .3px;
+    text-align: center;
+    font-style: italic;
+}
+.subscribe-text::after {
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    right: -80px;
+    content: '';
+    width: 100px;
+    height: 40px;
+    background: url('http://globalcoachinglab.com/public/images/arrow.png') no-repeat;
+    background-size: cover;
 }
 @media screen and (max-width: 767px) {
     .u-buffer--left {

@@ -67,6 +67,10 @@
           </div>
           <div class="pure-u-1-2 u-isdesktop">
             <div class="u-t-r u-cushion-t">
+              <span class="subscribe-text">
+                Learn from Leadership Insights and Applied leadership impact stories
+              </span>
+              <button class="subscribe-button">Sign me up!</button>
               <a href="https://twitter.com/GCL_Asia" target="_blank">
                 <img class="header-social__icon" src="http://globalcoachinglab.com/public/images/twitter_icon.png" />
               </a>
@@ -572,8 +576,22 @@
         </div>
       </div>
     </div>
+    <div class="subscribe-form-container">
+      <div class="subscribe-form">
+        <form>
+          <h4>Subscribe</h4>
+          <input type="text" placeholder="enter name" required />
+          <input type="email" placeholder="enter email" required />
+          <input type="text" placeholder="enter occupation" required />
+          <input type="text" placeholder="enter industry" required />
+          <textarea placeholder="note" rows="5"></textarea>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="http://globalcoachinglab.com/assets/javascript/owl.carousel.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
@@ -600,6 +618,17 @@
       $(".nav--close").on("click", function(){
         $('.nav--mobile').removeClass('u-d-block');
         $('.nav--mobile').addClass('u-hidden');
+      });
+
+      $(".subscribe-button").on("click", function(){
+        $(".subscribe-form-container").fadeIn(500);
+      });
+
+      $(".subscribe-form-container").on("click", function(e){
+        var ele = $(e.target);
+        if(!ele.parents('.subscribe-form').length){
+          $(".subscribe-form-container").fadeOut(700);
+        }
       });
     });
   </script>

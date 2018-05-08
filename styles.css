@@ -3478,7 +3478,7 @@ a {
 .subscribe-text::after {
     display: block;
     position: absolute;
-    bottom: -35px;
+    bottom: -32px;
     right: -80px;
     content: '';
     width: 100px;

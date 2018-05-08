@@ -576,22 +576,20 @@
         </div>
       </div>
     </div>
-    <div class="subscribe-form-container">
+  <div class="subscribe-form-container">
       <div class="subscribe-form">
-        <form>
           <h4>Subscribe</h4>
-          <input type="text" placeholder="enter name" required />
-          <input type="email" placeholder="enter email" required />
-          <input type="text" placeholder="enter occupation" required />
-          <input type="text" placeholder="enter industry" required />
-          <textarea placeholder="note" rows="5"></textarea>
-          <button>Submit</button>
-        </form>
+          <input id="name" type="text" placeholder="enter name" required />
+          <input id="email" type="email" placeholder="enter email" required />
+          <input id="occupation" type="text" placeholder="enter occupation" required />
+          <input id="industry" type="text" placeholder="enter industry" required />
+          <textarea id="note" placeholder="note" rows="5"></textarea>
+          <button id="subsribe-submit">Submit</button>
       </div>
     </div>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="http://globalcoachinglab.com/assets/javascript/owl.carousel.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
@@ -615,6 +613,7 @@
         $('.nav--mobile').removeClass('u-hidden');
       });
 
+      
       $(".nav--close").on("click", function(){
         $('.nav--mobile').removeClass('u-d-block');
         $('.nav--mobile').addClass('u-hidden');
@@ -632,4 +631,5 @@
       });
     });
   </script>
+  <script src="http://globalcoachinglab.com/assets/javascript/script.js"></script>
 </html>

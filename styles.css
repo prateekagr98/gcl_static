@@ -3494,6 +3494,20 @@ a {
     background: url('http://globalcoachinglab.com/public/images/arrow.png') no-repeat;
     background-size: cover;
 }
+.events-table thead {
+    font-weight: bold;
+    background-color: #4499D6;
+    color: white;
+}
+.events-table td {
+    padding: 4px 8px;
+}
+.events-table tbody tr:nth-child(2n+1) {
+    background-color: #BBD4F1;
+}
+.events-table tbody tr:nth-child(2n) {
+    background-color: #E8EAF5;
+}
 @media screen and (max-width: 767px) {
     .u-buffer--left {
         padding-left: 0px;

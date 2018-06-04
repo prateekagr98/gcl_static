@@ -3525,6 +3525,12 @@ a {
     font-size: 14px;
     font-style: italic;
 }
+.events-arrow {
+    display: block;
+    width: 450px;
+    margin: auto;
+    padding: 24px;
+}
 .events-category--image {
     width: 90px;
 }

@@ -3531,6 +3531,9 @@ a {
     margin: auto;
     padding: 24px;
 }
+.events-side {
+    width: 100%;
+}
 .events-category--image {
     width: 90px;
 }

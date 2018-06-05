@@ -3599,6 +3599,17 @@ a {
     position: relative;
     top: -10px;
 }
+.fc-right h2 {
+    position: relative;
+    top: 10px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.fc-day-header {
+    font-weight: normal;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
 @media screen and (max-width: 767px) {
     .u-buffer--left {
         padding-left: 0px;

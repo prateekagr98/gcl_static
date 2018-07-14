@@ -3610,6 +3610,13 @@ a {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
 }
+.blog-btn {
+    padding: 10px 20px;
+    background: #3492D3;
+    box-shadow: 0 2px 8px 0 rgba(58, 147, 209, .50);
+    border-color: #3492D3;
+    color: white;
+}
 @media screen and (max-width: 767px) {
     .u-buffer--left {
         padding-left: 0px;

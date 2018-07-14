@@ -319,13 +319,13 @@
           </div>
         </div>
       </div>
-      <div class="side-card sidebar popup">
-        <div class="side-card--content">
-          <p class="section__text">
+      <div class="noti--banner">
+        <div class="container">
+          <p class="section__text u-t-white">
             Coaching is life changing! At this moment some of our coaches are creating such an experience for professionals like yourself. Your decision to speak with us would be the best gift you can give yourself. Lets talk! Call us at +65 9835 3891 (Singapore) and +91 96508 43332 (India)
           </p>
-          <p class="section__text">
-            To know more about our Coaching Impact Read – <a href="/insights-impact">Insights and Impact</a>.
+          <p class="section__text u-t-white">
+            To know more about our Coaching Impact Read – <a href="/insights-impact" class="u-t-b u-t-white">Insights and Impact</a>
           </p>
         </div>
       </div>
@@ -367,7 +367,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.popup').hide();
+      $('.noti--banner').hide();
 
       $(".nav--hamburger").on("click", function(){
         $('.nav--mobile').addClass('u-d-block');
@@ -393,11 +393,7 @@
 
       $(window).scroll(function() {
          if($(window).scrollTop() + $(window).height() == $(document).height()) {
-          $('.popup').show('slide', {direction: 'right'}, 500);
-         } else {
-          if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
-            $('.popup').fadeOut();
-          }
+          $('.noti--banner').show(500);
          }
       });
     });

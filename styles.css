@@ -3627,6 +3627,11 @@ a {
 .popup a {
       color: #273D95;
 }
+.magnify__glass {
+  width: 30px !important;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 @media screen and (max-width: 767px) {
     .u-buffer--left {
         padding-left: 0px;

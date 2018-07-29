@@ -3632,6 +3632,27 @@ a {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+.inspireme--container {
+  background-color: #0E6BB3;
+  border-color: #0E6BB3;
+}
+.inspireme-btn {
+  background-color: #FED63B;
+  margin-bottom: 0px;
+  margin-right: 12px;
+  height: 100px;
+  text-align: center;
+  font-size: 18px;
+  padding: 3px;
+  border-radius: 3px;
+}
+.inspireme-btn span {
+  position: relative;
+  top: 25px;
+}
+.inspireme-btn:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 767px) {
     .u-buffer--left {
         padding-left: 0px;

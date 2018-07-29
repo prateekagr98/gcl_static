@@ -3599,33 +3599,49 @@ a {
 .noti--banner a {
     font-size: inherit !important;
 }
-.popup {
+.popup--container {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 300px;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup {
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 425px;
+    height: 290px;
+    padding-left: 12px;
+    padding-right: 12px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .17);
-    border: 1px solid #ef5a51;
-    background-color: #ef5a51;
+    border: 1px solid #FCD458;
+    background-color: #FCD458;
     border-radius: 3px;
 }
-.popup::before {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    right: -20px;
-    width: 0; 
-    height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent; 
-    border-left:20px solid #ef5a51; 
+.popup .section__text {
+    margin-bottom: 0px;
 }
-
 .popup p {
-      color: white;
+    text-align: justify;
 }
 .popup a {
-      color: #273D95;
+      color: #2D9C8F;
+      font-weight: bold;
+}
+.popup__close {
+  position: absolute;
+  font-size: 14px;
+  color: #414146;
+  letter-spacing: .3px;
+  line-height: 25px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
 }
 .magnify__glass {
   width: 30px !important;

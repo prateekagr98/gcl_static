@@ -498,11 +498,16 @@
         </div>
       </div>
     </div>
-    <div class="side-card sidebar popup">
-      <div class="side-card--content">
-        <p class="section__text">
-          If you are looking for helpline, life-balance and other sustainability solutions for Students or Adults, please write to us at <a href="mailto:sustainability@globalcoachinglab.com">sustainability@globalcoachinglab.com</a>. We will be happy to discuss individual coaching or group coaching sessions based on your comfort and needs
-        </p>
+    <div class="popup--container">
+      <div class="side-card sidebar popup">
+        <span class="popup__close">close</span>
+        <div class="side-card--content">
+          <div class="u-t-c">
+              <img class="header__logo" src="http://globalcoachinglab.com/public/images/spinning.svg" /></div>
+          <p class="section__text">
+            If you are looking for helpline, life-balance and other sustainability solutions for Students or Adults, please write to us at <a href="mailto:empowerme@globalcoachinglab.com">empowerme@globalcoachinglab.com</a>. We will be happy to discuss individual coaching or group coaching sessions based on your comfort and needs
+          </p>
+        </div>
       </div>
     </div>
   <div class="subscribe-form-container">
@@ -628,15 +633,19 @@
         }
       });
 
-      $('.popup').hide();
+      $('.popup--container').hide();
       $(window).scroll(function() {
          if($(window).scrollTop() + $(window).height() == $(document).height()) {
-          $('.popup').show('slide', {direction: 'right'}, 500);
+          $('.popup--container').fadeIn();
          } else {
           if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
-            $('.popup').fadeOut();
+            $('.popup--container').fadeOut();
           }
          }
+      });
+
+      $('.popup__close').on('click', function(){
+        $('.popup--container').fadeOut();
       });
     });
   </script>

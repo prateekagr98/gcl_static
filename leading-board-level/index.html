@@ -508,11 +508,17 @@
           </div>
         </div>
       </div>
-      <div class="side-card sidebar popup">
-        <div class="side-card--content">
-          <p class="section__text">
-            Sign up for our public programs, in-house training programs or 1:1 coaching solutions by writing to us at <a href="mailto:leadershipsolutions@globalcoachinglab.com">leadershipsolutions@globalcoachinglab.com</a>. The information on each solution serves as a guideline on our capabilities. We will be happy to connect with you to custom design a program that best suits you, your team and your organisation
-          </p>
+      <div class="popup--container">
+        <div class="side-card sidebar popup">
+          <span class="popup__close">close</span>
+          <div class="side-card--content">
+            <div class="u-t-c">
+            <img class="header__logo" src="http://globalcoachinglab.com/public/images/spinning.svg" /></div>
+            <p class="section__text">
+              It’s all about your Leadership Acumen! Build your leadership acumen through our <a href="/events" target="_blank">public programs</a><br />
+              Or let’s set aside meaningful time to discuss your organisation’s leadership requirements. Connect with us through <a href="mailto:empowerme@globalcoachinglab.com">empowerme@globalcoachinglab.com</a> or Call us at +65 9835 3891 (Singapore) and +91 96508 43332 (India).
+            </p>
+          </div>
         </div>
       </div>
       <div class="footer">
@@ -557,7 +563,7 @@
     lightbox.load();
 
     $(document).ready(function(){
-      $('.popup').hide();
+      $('.popup--container').hide();
 
       $(".nav--hamburger").on("click", function(){
         $('.nav--mobile').addClass('u-d-block');
@@ -583,12 +589,16 @@
 
       $(window).scroll(function() {
          if($(window).scrollTop() + $(window).height() == $(document).height()) {
-          $('.popup').show('slide', {direction: 'right'}, 500);
+          $('.popup--container').fadeIn();
          } else {
           if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
-            $('.popup').fadeOut();
+            $('.popup--container').fadeOut();
           }
          }
+      });
+
+      $('.popup__close').on('click', function(){
+        $('.popup--container').fadeOut();
       });
     });
   </script>

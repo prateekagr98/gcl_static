@@ -1,6 +1,6 @@
 # Global Coaching Labs
 
-This repository contains the codebase for the public facing website of Global Coaching Labs hosted at http://globalcoachinglab.com.
+This repository contains the codebase for the public facing website of Global Coaching Labs hosted at https://globalcoachinglab.com.
 
 
 ### Setup in local machine

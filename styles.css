@@ -2553,36 +2553,17 @@ a {
     margin-top: 30px
 }
 .insights--newsletters--item {
-    display: inline-block;
-    background-color: #388e3c;
-    padding: 12px;
-    width: 200px;
-    border-radius: 3px;
-    margin-left: 12px;
-    margin-bottom: 12px;
-    margin-right: 12px;
-    vertical-align: top
+  height: 135px;
 }
-.insights--newsletters--item.green {
-    background-color: #388e3c
-}
-.insights--newsletters--item.blue {
-    background-color: #039be5
-}
-.insights--newsletters--item.teal {
-    background-color: #009688
-}
-.insights--newsletters--item.orange {
-    background-color: #df782d
-}
-.insights--newsletters--item img {
-    width: 100%
-}
-.insights--newsletters--item p {
-    margin: 8px 0 0;
-    color: #fff;
-    font-size: 15px;
-    text-align: center
+.insights--newsletter--logo {
+  font-weight: 400;
+  color: #fff;
+  height: 40px;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 2px;
+  background-color: #388e3c;
+  text-align: center;
 }
 .c-solutions__listitem {
     padding: 8px 16px 8px 0;

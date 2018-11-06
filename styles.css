@@ -1695,6 +1695,12 @@ a {
 .u-t-orange {
     color: #df782d !important;
 }
+.u-t-grey {
+    color: #787887 !important;
+}
+.u-t-hover-orange:hover {
+    color: #df782d !important;
+}
 .u-t-i {
     font-style: italic;
 }
@@ -3352,6 +3358,9 @@ a {
 .events .enrichment {
     color: #009688
 }
+.u-bg-green {
+    background-color: #388e3c;
+}
 .u-cushion-r-desktop {
     padding-right: 12px;
 }
@@ -3668,6 +3677,21 @@ a {
 }
 .inspireme-btn:hover {
   cursor: pointer;
+}
+.archive-btn {
+    position: relative;
+    padding-left: 35px;
+}
+.archive-btn:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0; 
+  height: 0; 
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid #388e3c;
 }
 @media screen and (max-width: 767px) {
     .u-buffer--left {

@@ -3678,21 +3678,6 @@ a {
 .inspireme-btn:hover {
   cursor: pointer;
 }
-.archive-btn {
-    position: relative;
-    padding-left: 35px;
-}
-.archive-btn:before {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 0; 
-  height: 0; 
-  border-top: 22px solid transparent;
-  border-bottom: 22px solid transparent;
-  border-left: 22px solid #388e3c;
-}
 @media screen and (max-width: 767px) {
     .u-buffer--left {
         padding-left: 0px;

@@ -3459,20 +3459,6 @@ a {
     background: url('https://globalcoachinglab.com/public/images/arrow.png') no-repeat;
     background-size: cover;
 }
-.events-table thead {
-    font-weight: bold;
-    background-color: #4499D6;
-    color: white;
-}
-.events-table td {
-    padding: 4px 8px;
-}
-.events-table tbody tr:nth-child(2n+1) {
-    background-color: #BBD4F1;
-}
-.events-table tbody tr:nth-child(2n) {
-    background-color: #E8EAF5;
-}
 .events-category--heading {
     background-color: grey;
     padding: 12px;
@@ -3658,6 +3644,59 @@ a {
 }
 .inspireme-btn:hover {
   cursor: pointer;
+}
+.event-cards--container {
+
+}
+.event--card {
+  position: relative;
+  width: 100%;
+  min-height: 155px;
+  border: 1px solid rgba(0, 0, 0, .17);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .17);
+  padding: 12px;
+  padding-top: 55px;
+}
+.event--card i {
+  margin-right: 8px;
+}
+.event__date {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #009688;
+  border-bottom-right-radius: 15px;
+  padding: 8px;
+  color: white;
+  font-weight: 500;
+}
+.event__location {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #009688;
+  border-bottom-left-radius: 15px;
+  padding: 8px;
+  color: white;
+  font-weight: 500;
+}
+.event__name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #009688;
+}
+.event__description {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  color: #787887;
+  margin-top: 8px;
+}
+.event__description::before {
+  content: 'Objective: ';
+  color: #009688;
+  font-style: normal;
+  font-weight: 500;
 }
 @media screen and (max-width: 767px) {
     .u-buffer--left {

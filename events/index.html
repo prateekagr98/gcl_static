@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Events | Global Coaching Labs</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.print.css" media="print" />
     <link rel="stylesheet" href="https://globalcoachinglab.com/assets/stylesheet/styles.css" />
   </head>
   <body>
@@ -178,7 +176,7 @@
             Events
             <div class="u-pos-l-b nav--dropdown is-item-hover">
               <a href="/events" class="nav--dropdown__item">
-                Events Calendar
+                Public Programs
               </a>
               <a href="/publications" class="nav--dropdown__item">
                 Publications &amp; Media
@@ -198,7 +196,7 @@
               <a
                 href="/events"
                 class="s-video--item c-solutions__navitem u-d-inlineblock active">
-                Events Calendar
+                Public Programs
               </a>
               <a
                 href="/publications"
@@ -231,9 +229,6 @@
           </div>
           <div class="u-t-c">
             <h1 style="font-size: 24px; font-weight: normal; color: #D65C1B;">Global Coaching Lab's Calendar of Events</h1>
-          </div>
-          <div class="u-buffer--top u-buffer--bottom">
-            <div style="width: 800px; margin: auto;" id="calendar"></div>
           </div>
           <div class="u-cushion-b u-spacer-b u-buffer--top">
             <h5 class="u-t-c" style="color: #8E3D0F; margin: 0px; font-size: 22px;">Your Leadership  Roadmap</h5>
@@ -310,6 +305,18 @@
                 <td>Objective</td>
               </thead>
               <tbody>
+                <tr>
+                  <td>13<sup>th</sup> – 15<sup>th</sup> November 2018</td>
+                  <td>Global Leadership and Coaching Seminar</td>
+                  <td>Chennai, India</td>
+                  <td>Aligning your potential to your purpose enabling yourself to be a global leader</td>
+                </tr>
+                <tr>
+                  <td>16<sup>th</sup> – 18<sup>th</sup> October 2018</td>
+                  <td>Global Leadership and Coaching Seminar</td>
+                  <td>Singapore</td>
+                  <td>Aligning your potential to your purpose enabling yourself to be a global leader</td>
+                </tr>
                 <tr>
                   <td>29<sup>th</sup> August 2018</td>
                   <td>PEOPLE AND CULTURE INTEGRATION</td>
@@ -434,8 +441,6 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://globalcoachinglab.com/assets/javascript/moment.js"></script>
-  <script src="https://globalcoachinglab.com/assets/javascript/fullcalendar.min.js"></script>
   <script>
     $(document).ready(function(){
       $(".nav--hamburger").on("click", function(){
@@ -458,84 +463,6 @@
         if(!ele.parents('.subscribe-form').length){
           $(".subscribe-form-container").fadeOut(700);
         }
-      });
-
-      $('#calendar').fullCalendar({
-        header: {
-        left: 'prev,next today',
-        center: '',
-        right: 'title'
-      },
-      defaultDate: (new Date()).toString(),
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'PEOPLE AND CULTURE INTEGRATION',
-          start: '2018-08-29'
-        },
-        {
-          title: 'EMPOWERING WOMEN INTO LEADERSHIP',
-          start: '2018-09-17',
-          end: '2018-09-18'
-        },
-        {
-          title: 'MENTORING WALK',
-          start: '2018-09-29'
-        },
-        {
-          title: 'VIP – IDENTIFYING YOUR VOICE, IDENTITY AND PURPOSE',
-          start: '2018-10-08',
-          end: '2018-10-09'
-        },
-        {
-          title: 'GLOBAL LEADERSHIP AND COACHING SEMINAR',
-          start: '2018-10-16',
-          end: '2018-10-18'
-        },
-        {
-          title: 'LEADER AS A COACH',
-          start: '2018-10-18',
-          end: '2018-10-19'
-        },
-        {
-          title: 'PEOPLE AND CULTURE INTEGRATION',
-          start: '2018-11-01'
-        },
-        {
-          title: 'EMPOWERING WOMEN INTO LEADERSHIP',
-          start: '2018-11-19',
-          end: '2018-11-20'
-        },
-        {
-          title: 'VIP – IDENTIFYING YOUR VOICE, IDENTITY AND PURPOSE',
-          start: '2019-02-11',
-          end: '2019-02-12'
-        },
-        {
-          title: 'PEOPLE AND CULTURE INTEGRATION',
-          start: '2019-02-22'
-        },
-        {
-          title: 'MENTORING WALK',
-          start: '2019-03-09'
-        },
-        {
-          title: 'EMPOWERING WOMEN INTO LEADERSHIP',
-          start: '2019-03-26',
-          end: '2019-03-27'
-        },
-        {
-          title: 'LEADER AS A COACH',
-          start: '2019-04-12'
-        },
-        {
-          title: 'GLOBAL LEADERSHIP AND COACHING SEMINAR',
-          start: '2019-04-15',
-          end: '2019-04-17'
-        }
-      ]
       });
     });
   </script>

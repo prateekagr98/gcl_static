@@ -3698,6 +3698,19 @@ a {
   font-style: normal;
   font-weight: 500;
 }
+.calendar__month {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #414146;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: normal;
+  margin-right: 12px;
+}
+.calendar__month:hover, .calendar__month.selected {
+  background: #df782d; 
+}
 @media screen and (max-width: 767px) {
     .u-buffer--left {
         padding-left: 0px;

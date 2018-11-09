@@ -3651,57 +3651,80 @@ a {
 .event--card {
   position: relative;
   width: 100%;
-  min-height: 155px;
   border: 1px solid rgba(0, 0, 0, .17);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .17);
   padding: 12px;
-  padding-top: 55px;
+  border-radius: 3px;
+  background-color: #F8F8F8;
+}
+.event--card.people {
+  background-color: #9EE1CE;
+  border-color: #9EE1CE;
+}
+.event--card.global-leadership {
+  background-color: #FDBF2D;
+  border-color: #FDBF2D;
+}
+.event--card.vip {
+  background-color: #94A4DC;
+  border-color: #94A4DC;
+}
+.event--card.leader-coach {
+  background-color: #A0E0F6;
+  border-color: #A0E0F6;
+}
+.event--card.empowering-women {
+  background-color: #CAF19A;
+  border-color: #CAF19A;
+}
+.event--card.mentoring {
+  background-color: #3BB2E3;
+  border-color: #3BB2E3;
 }
 .event--card i {
   margin-right: 8px;
 }
 .event__date {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #009688;
-  border-bottom-right-radius: 15px;
+  width: 100%;
+  background-color: white;
   padding: 8px;
-  color: white;
+  color: #787887;
   font-weight: 500;
+  text-align: center;
 }
 .event__location {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  background-color: #009688;
-  border-bottom-left-radius: 15px;
+  width: 100%;
+  background-color: white;
   padding: 8px;
-  color: white;
+  color: #787887;
   font-weight: 500;
+  text-align: center;
+  margin-top: 12px;
 }
 .event__name {
   font-weight: 500;
   font-size: 18px;
-  color: #009688;
+  color: #111111;
 }
 .event__description {
   font-weight: 400;
   font-size: 14px;
   font-style: italic;
-  color: #787887;
+  color: rgba(17, 17, 17, 0.6);
   margin-top: 8px;
+  padding-bottom: 12px;
+  font-weight: 400;
 }
 .event__description::before {
   content: 'Objective: ';
-  color: #009688;
+  color: #111111;
   font-style: normal;
   font-weight: 500;
 }
 .calendar__month {
   display: inline-block;
   padding: 10px 20px;
-  background: #414146;
+  background: #9F53A0;
   color: white;
   cursor: pointer;
   border-radius: 3px;

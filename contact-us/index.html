@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Contact Us | Global Coaching Labs</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://globalcoachinglab.com/assets/stylesheet/styles.css" />
+    <link rel="stylesheet" href="https://globalcoachinglab.com/assets/stylesheet/nice-select-original.css" />
   </head>
   <body>
     <div>
@@ -206,7 +208,7 @@
                       Golf Course Road, DLF Phase V, Sector 43, 
                       Gurugram, Haryana 122002
                       <div>
-                        <img style="width: '24px'" src="/public/images/phone.png" />
+                        <i class="fas fa-phone"></i>
                         <span class="u-valign">+91 96508 43332</span>
                       </div>
                     </div>
@@ -221,7 +223,7 @@
                       #10-04
                       Singapore - 078878
                       <div>
-                        <img style="width: '24px'" src="/public/images/phone.png" />
+                        <i class="fas fa-phone"></i>
                         <span class="u-valign">+65 9835 2891</span>
                       </div>
                     </p>
@@ -236,6 +238,7 @@
                 program related enquires, write to:
               </p>
               <p class="section__text">
+                <i class="fas fa-at" style="color: #14bef0;"></i>
                 <a href="mailto:empowerme@globalcoachinglab.com">empowerme@globalcoachinglab.com</a>
               </p>
             </div>
@@ -268,17 +271,13 @@
               <h5 class="contact__heading">For General Queries</h5>
               <form class="u-cushion-t" action="http://globalcoachinglabs.com/new_contact_form.php" method="POST" name="contactform">
                 <label class="contact__label">Category</label>
-                <select name="category" class="contact__input" required>
+                <select name="category" id="category" required>
                   <option value="Executive Coaching">Executive Coaching</option>
                   <option value="Leadership Development">Leadership Development</option>
                   <option value="Women Empowerment">Women Empowerment</option>
                   <option value="Building Sustainability">Building Sustainability</option>
                 </select>
-                <input
-                  type="text"
-                  class="contact__input"
-                  name="category" required />
-                <label class="contact__label">Name</label>
+                <label class="contact__label u-spacer-t u-cushion-t">Name</label>
                 <input
                   type="text"
                   class="contact__input"
@@ -340,6 +339,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
+
+      $('#category').niceSelect();
+
       $(".nav--hamburger").on("click", function(){
         $('.nav--mobile').addClass('u-d-block');
         $('.nav--mobile').removeClass('u-hidden');
@@ -368,5 +370,6 @@
     }
   </script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript" src="https://globalcoachinglab.com/assets/javascript/nice-select.js"></script>
   <script src="https://globalcoachinglab.com/assets/javascript/script.js"></script>
 </html>

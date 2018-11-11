@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://globalcoachinglab.com/assets/stylesheet/tingle.min.css" />
+    <link rel="stylesheet" href="https://globalcoachinglab.com/assets/stylesheet/lightbox.css" />
     <link rel="stylesheet" href="https://globalcoachinglab.com/assets/stylesheet/styles.css" />
   </head>
   <body>
@@ -419,6 +420,14 @@
               <h2 class="side-card__heading sidebar__heading executive-coaching">Coachees’ Corner</h2>
             </div>
             <div class="side-card">
+                <h2 class="side-card__heading executive-coaching">Our Coaching Approach</h2>
+                <div>
+                  <img
+                    class="side-card__image u-pointer"
+                    src="https://globalcoachinglab.com/public/images/coaching_approach.png" data-jslghtbx />
+                </div>
+              </div>
+            <div class="side-card">
               <h2 class="side-card__heading sidebar__heading executive-coaching">Asking the right questions</h2>
               <div class="u-cushion-all">
                 <q class="section__text side-card__quote">
@@ -514,10 +523,10 @@
       </div>
     </div>
 </body>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://globalcoachinglab.com/assets/javascript/tingle.min.js"></script>
+  <script src="https://globalcoachinglab.com/assets/javascript/lightbox.min.js"></script>
   <script type="text/javascript">
     // instanciate new modal
     var modal = new tingle.modal({
@@ -558,7 +567,9 @@
       modal.open();
     }
 
-    $(document).ready(function(){      
+    $(document).ready(function(){
+    var lightbox = new Lightbox();
+    lightbox.load();    
       $(".nav--hamburger").on("click", function(){
         $('.nav--mobile').addClass('u-d-block');
         $('.nav--mobile').removeClass('u-hidden');

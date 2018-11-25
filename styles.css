@@ -2557,6 +2557,13 @@ a {
 }
 .insights--newsletters--item {
   height: 135px;
+  vertical-align: top;
+}
+.insights--newsletters--item.latest {
+    height: 450px;
+}
+.insights--newsletters .s-video--item {
+    padding: 0px;
 }
 .insights--newsletter--logo {
   font-weight: 400;

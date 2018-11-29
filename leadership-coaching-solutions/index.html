@@ -375,29 +375,31 @@
         </div>
       </div>
     </div>
-  <div class="subscribe-form-container">
-      <div class="subscribe-form">
-        <form>
-          <h4>Subscribe</h4>
-          <input id="name" type="text" placeholder="enter name" required />
-          <input id="email" type="email" placeholder="enter email" required />
-          <input id="occupation" type="text" placeholder="enter occupation" required />
-          <input id="industry" type="text" placeholder="enter industry" required />
-          <textarea id="note" placeholder="note" rows="5"></textarea>
-          <p class="subscribe-terms">
-            We will use your personal information to contact you with the newsletter and other relevant information that may be of interest to you. Your information will be kept confidential and not shared with any third party or used for any other purpose.
-          </p>
-          <button id="subscribe-submit">Submit</button>
-        </form>
-      </div>
+    <div class="sidepopup--container">
+      <i class="far fa-bell"></i>
+      <i class="fas fa-circle"></i>
     </div>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="subscribe-form-container">
+        <div class="subscribe-form">
+          <form>
+            <h4>Subscribe</h4>
+            <input id="name" type="text" placeholder="enter name" required />
+            <input id="email" type="email" placeholder="enter email" required />
+            <input id="occupation" type="text" placeholder="enter occupation" required />
+            <input id="industry" type="text" placeholder="enter industry" required />
+            <textarea id="note" placeholder="note" rows="5"></textarea>
+            <p class="subscribe-terms">
+              We will use your personal information to contact you with the newsletter and other relevant information that may be of interest to you. Your information will be kept confidential and not shared with any third party or used for any other purpose.
+            </p>
+            <button id="subscribe-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.popup--container').hide();
-
       $(".nav--hamburger").on("click", function(){
         $('.nav--mobile').addClass('u-d-block');
         $('.nav--mobile').removeClass('u-hidden');
@@ -418,20 +420,6 @@
         if(!ele.parents('.subscribe-form').length){
           $(".subscribe-form-container").fadeOut(700);
         }
-      });
-
-      $(window).scroll(function() {
-         if($(window).scrollTop() + $(window).height() == $(document).height()) {
-          $('.popup--container').fadeIn();
-         } else {
-          if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
-            $('.popup--container').fadeOut();
-          }
-         }
-      });
-
-      $('.popup__close').on('click', function(){
-        $('.popup--container').fadeOut();
       });
     });
   </script>

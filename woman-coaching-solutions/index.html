@@ -379,6 +379,10 @@
         </div>
       </div>
     </div>
+    <div class="sidepopup--container">
+      <i class="far fa-bell"></i>
+      <i class="fas fa-circle"></i>
+    </div>
     <div class="subscribe-form-container">
       <div class="subscribe-form">
         <form>
@@ -424,21 +428,6 @@
         if(!ele.parents('.subscribe-form').length){
           $(".subscribe-form-container").fadeOut(700);
         }
-      });
-
-      $('.popup--container').hide();
-      $(window).scroll(function() {
-         if($(window).scrollTop() + $(window).height() == $(document).height()) {
-          $('.popup--container').fadeIn();
-         } else {
-          if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
-            $('.popup--container').fadeOut();
-          }
-         }
-      });
-
-      $('.popup__close').on('click', function(){
-        $('.popup--container').fadeOut();
       });
     });
   </script>

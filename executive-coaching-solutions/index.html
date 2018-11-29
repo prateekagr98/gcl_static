@@ -407,6 +407,10 @@
           </div>
         </div>
       </div>
+      <div class="sidepopup--container">
+        <i class="far fa-bell"></i>
+        <i class="fas fa-circle"></i>
+      </div>
       <div class="footer">
         <div class="container">
           <div class="pure-g">
@@ -447,6 +451,8 @@
     var lightbox = new Lightbox();
     lightbox.load();
 
+    var shown = false;
+
     $(document).ready(function(){
       $(".nav--hamburger").on("click", function(){
         $('.nav--mobile').addClass('u-d-block');
@@ -471,18 +477,25 @@
       });
 
       $('.popup--container').hide();
+      $('.sidepopup--container').hide();
       $(window).scroll(function() {
          if($(window).scrollTop() + $(window).height() == $(document).height()) {
-          $('.popup--container').fadeIn();
-         } else {
-          if($(document).height() - ($(window).scrollTop() + $(window).height()) > 100) {
-            $('.popup--container').fadeOut();
+          if(!shown){
+            $('.sidepopup--container').fadeOut();
+            $('.popup--container').fadeIn();
+            shown = true;
           }
          }
       });
 
+      $('.sidepopup--container').on('click', function(e) {
+        $('.popup--container').fadeIn();
+        $('.sidepopup--container').fadeOut();
+      });
+
       $('.popup__close').on('click', function(){
         $('.popup--container').fadeOut();
+        $('.sidepopup--container').fadeIn();
       });
     });
   </script>
